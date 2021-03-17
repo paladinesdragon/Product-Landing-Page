@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property='og:title' content='Product Landing Page'/>
+    <meta property='og:image' content='../img/gal74744.jpg'/>
+    <meta property='og:description' content='Product Landing Page tutorial from Traversy Media. Concepts learned include Font Awesome icons, Google fonts, CSS flexbox and grid, utilizing JavaScript and CSS library for lightbox, using forms, responsiveness using CSS media queries, and deploying site with Netlify.'/>
+    <meta property='og:url' content='//https://tm-head-phono.netlify.app/'/>
+    <script src="https://kit.fontawesome.com/1ab2a302e5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/simplelightbox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Phono - Headphones of the Future</title>
+</head>
+<body id="home">
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Phono</h1>
+            <ul class="nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--showcase-->
+    <section class="section-a">
+        <div class="container">
+            <div>
+                <h1>The headphones of the future</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus cum exercitationem maiores reprehenderit repudiandae minima optio, consequuntur nisi quisquam. Aliquid?</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <img src="img/showcase.jpg" alt="showcase">
+        </div>
+    </section>
+
+    <!--overlay text-->
+    <section class="section-b">
+        <div class="overlay">
+            <div class="section-b-inner">
+                <h3>Loud & Clear</h3>
+                <h2>People Aren't Hearing All The Music</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae tempore aspernatur facere! Veniam quia porro, pariatur autem nesciunt laborum aut.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--gallery-->
+    <section class="section-c">
+        <div class="gallery">
+            <a href="img/gal2323.jpg" class="big"><img src="img/gal2323.jpg" alt=""></a>
+            <a href="img/gal39834.jpg" class="big"><img src="img/gal39834.jpg" alt=""></a>
+            <a href="img/gal43884.jpg" class="big"><img src="img/gal43884.jpg" alt=""></a>
+            <a href="img/gal4958.jpg" class="big"><img src="img/gal4958.jpg" alt=""></a>
+            <a href="img/gal4545.jpg" class="big"><img src="img/gal4545.jpg" alt=""></a>
+            <a href="img/gal74744.jpg" class="big"><img src="img/gal74744.jpg" alt=""></a>
+        </div>
+    </section>
+
+    <!--footer-->
+
+    <footer class="section-footer">
+        <div class="container">
+            <div>
+                <h2>Lorem ipsum dolor sit.</h2>
+                <a href="http://twitter.com">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="http://facebook.com">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="http://youtube.com">
+                    <i class="fab fa-youtube fa-2x"></i>
+                </a>
+            </div>
+            <div>
+                <h3>Company Info</h3>
+                <ul>
+                    <li><a href="#">All Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Blog Posts</h3>
+                <ul>
+                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Subscribe</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+                    <div class="email-form">
+                        <span class="form-control-wrap">
+                            <input type="email" name="email" id="email" size="40" class="form-control" placeholder="Email">
+                        </span>
+                        
+                        <button type="submit" class="form-control submit">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="recaptcha" data-netlify-recaptcha="true"></div>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="js/simple-lightbox.min.js"></script>
+    <script>
+        $(function() {
+            const $gallery = $('.gallery a').simpleLightbox();
+        })
+    </script>
+</body>
+</html>
